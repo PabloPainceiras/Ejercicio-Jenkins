@@ -4,7 +4,7 @@
 
 En esta guía montaremos un entorno automatizado de testeo mediante Jenkins. Escanearemos la web “juiceshop” a través de owasp-zap. Para ello crearemos un pipeline en docker, el cual levantara un contenedor de owasp y realizara el escaneo seleccionado.
 
-**[Pipeline](https://github.com/IES-Rafael-Alberti/Ejercicio-Jenkins/blob/main/pipelinezap) que vamos a usar explicado en stages**
+**[Pipeline](https://github.com/PabloPainceiras/Ejercicio-Jenkins/blob/main/pipelinezap) que vamos a usar explicado en stages**
 
 ```jsx
 pipeline {
@@ -170,7 +170,7 @@ NOTA: En caso de no tener una imagen del mismo se nos descargara.
 
 A continuación, con el comando `docker-compose -f rutaendondeseencuentra/jenkins.yml up -d` levantaremos el contenedor jenkins
 
-Para poder hacer ejecutar el comando tendremos que descargar el [jenkins.yml](https://github.com/IES-Rafael-Alberti/Ejercicio-Jenkins/blob/main/jenkins.yml) y un [dockerfile](https://github.com/IES-Rafael-Alberti/Ejercicio-Jenkins/blob/main/Dockerfile), el cual esta enlazado al yml para poder ejecutar docker dentro de jenkins. Importante que ambos ficheros esten en la misma ruta
+Para poder hacer ejecutar el comando tendremos que descargar el [jenkins.yml](https://github.com/PabloPainceiras/Ejercicio-Jenkins/blob/main/jenkins.yml) y un [dockerfile](https://github.com/PabloPainceiras/Ejercicio-Jenkins/blob/main/Dockerfile), el cual esta enlazado al yml para poder ejecutar docker dentro de jenkins. Importante que ambos ficheros esten en la misma ruta
 
 NOTA: En caso de no tener una imagen del jenkins se nos descargara.
 
